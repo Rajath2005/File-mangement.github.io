@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Management System</h1>
+
+        <!-- File Upload Form -->
+        <form id="upload-form">
+            <label for="upload-password">Enter Password:</label>
+            <div class="password-container">
+                <input type="password" id="upload-password" placeholder="Enter password">
+                <span class="toggle-password">
+                    <i id="toggle-upload-password" class="eye-icon">👁‍🗨</i>
+                </span>
+            </div>
+            <input type="file" id="file-input">
+            <button type="button" id="upload-btn">Upload File</button>
+            <div id="upload-message"></div>
+            <div class="progress-container">
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <span id="progress-text"></span>
+            </div>
+        </form>
+
+        <!-- Files List -->
+        <h2>Uploaded Files</h2>
+        <div id="files-list"></div>
+
+        <!-- File Deletion Form -->
+        <form id="delete-form">
+            <label for="delete-password">Enter Delete Password:</label>
+            <div class="password-container">
+                <input type="password" id="delete-password" placeholder="Enter password">
+                <span class="toggle-password">
+                    <i id="toggle-delete-password" class="eye-icon">👁‍🗨</i>
+                </span>
+            </div>
+            <input type="text" id="file-to-delete" placeholder="Enter file name to delete">
+            <button type="button" id="delete-btn">Delete File</button>
+            <div id="delete-message"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
