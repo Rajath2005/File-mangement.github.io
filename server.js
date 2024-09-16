@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS if you are making API requests from a different domain
 app.use(cors());
 
-app.use(express.static('public'));
+// Serve static files (like HTML, CSS, and JS) from the root directory (no public folder)
+app.use(express.static(__dirname));
 app.use(express.json());
 
 // Define storage configuration for Multer
