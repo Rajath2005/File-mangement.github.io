@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - File Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffdfd;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fffdfd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(245, 245, 245, 0.657);
+        }
+        h1, h2, h3 {
+            color: #ff4f4f;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background-color: #8efff7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #c7254e;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "•";
+            color: #ff1616;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Rajath's File Management System</h1>
+    
+    <div class="section">
+        <h2>Overview</h2>
+        <p>This project is a <strong>File Management System</strong> that allows users to upload, manage, and view files directly from the web interface. The system supports file upload with timestamps and displays a list of uploaded files, including their upload date and time. A confirmation message is shown after each successful upload.</p>
+    </div>
+
+    <div class="section">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>File Upload</strong>: Upload files easily through the web interface.</li>
+            <li><strong>File List Display</strong>: Shows uploaded files with their names, upload date, and time.</li>
+            <li><strong>Responsive Design</strong>: Professional and user-friendly layout.</li>
+            <li><strong>File Management</strong>: Supports organizing and displaying uploaded files.</li>
+            <li><strong>Password Protected Access</strong>: A secure login system with password fields styled in card-type structures.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Frontend</strong>: HTML, CSS, JavaScript (for responsive and interactive UI)</li>
+            <li><strong>Backend</strong>: Node.js (for handling file uploads and file listing)</li>
+            <li><strong>File Storage</strong>: Files are stored on the server with timestamps.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Installation</h2>
+        <p>Follow the steps below to set up the project:</p>
+        <ol>
+            <li>Clone the repository: <code>git clone https://github.com/yourusername/filemanagement-system.git</code></li>
+            <li>Navigate into the project directory: <code>cd filemanagement-system</code></li>
+            <li>Install the required dependencies: <code>npm install</code></li>
+            <li>Start the server: <code>node app.js</code></li>
+            <li>Open the website in your browser: <code>http://localhost:3000</code></li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Usage</h2>
+        <ul>
+            <li>Upload files using the upload form on the homepage.</li>
+            <li>View the list of uploaded files, including their upload date and time.</li>
+            <li>The design offers a clean interface with password fields styled in card layouts.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li><strong>File Preview</strong>: Enable users to preview certain file types.</li>
+            <li><strong>Search/Filter Files</strong>: Add search functionality to filter files by name or upload date.</li>
+            <li><strong>User Authentication</strong>: Add user login and authentication features.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Hosting</h2>
+        <p>The project is hosted on a free platform. You can access the live version <a href="https://file-mangement-github-io.onrender.com">here</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contributing</h2>
+        <p>If you would like to contribute to this project, feel free to submit a pull request or open an issue.</p>
+        <h1>Developer: Rajath Kiran A</h1>
+    </div>
+</div>
+
+<!-- Link the JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
